@@ -28,7 +28,6 @@ async def faker_email():
 
 @api.get('/password')
 async def faker_password():
-    return {'name': faker.password() , 'Time': time() }
-
+    return {'password': faker.password() , 'Time': time() }
 
 
